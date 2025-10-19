@@ -3,9 +3,8 @@ import time
 import socketio
 from aiohttp import web
 from typing import Any, Dict
+from model import LinearQNet as DQN, QTrainer
 
-
-from model import DQN
 
 
 sio = socketio.AsyncServer(cors_allowed_origins="*")
